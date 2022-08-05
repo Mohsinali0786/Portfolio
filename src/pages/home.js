@@ -61,7 +61,7 @@ function Home() {
                     </Grid> */}
 
                     <img className='homeimg' src="https://media.istockphoto.com/photos/computer-programmer-working-on-laptop-picture-id1265176772?b=1&k=20&m=1265176772&s=170667a&w=0&h=IHFnvxa3kvVTuZcEfPpCSGIFA_gNT7dIlGDR7eD2cFI=" />
-                    <Grid className='prjdet' item xs={12}>
+                    <Grid className='prjdet' item xs={15}>
                         <Grid className="prjdetxt" item xs={12}>
                             <p className='txtyellow'>2+</p>
                             <p>year Experience</p>
