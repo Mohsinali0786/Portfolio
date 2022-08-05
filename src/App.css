@@ -1,0 +1,152 @@
+body {
+  /* background-color: black; */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWvCbbaU49E6N-_uAb-2RlKQ941iDFcwedQ&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.homeimg {
+  background-image: url('https://media.istockphoto.com/photos/computer-programmer-working-on-laptop-picture-id1265176772?b=1&k=20&m=1265176772&s=170667a&w=0&h=IHFnvxa3kvVTuZcEfPpCSGIFA_gNT7dIlGDR7eD2cFI=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.homeimg>h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.userimg {
+  border-radius: 100%;
+  width: 80px;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: rgb(45, 47, 48);
+  /* opacity: 0.7; */
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.name {
+  color: white;
+  text-align: left;
+
+}
+
+.name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.name>p {
+  font-size: 20px;
+  font-weight: bolder
+}
+
+.divider {
+  background-color: red;
+}
+
+.styledivider {
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+.styledivider>h3 {
+  text-align: left !important;
+}
+
+.styledivider>h3,
+h4 {
+  color: white;
+  /* text-align: left !important; */
+}
+
+.experience {
+  margin: 20px 5px;
+}
+
+.experience>h3,
+h5 {
+  color: white;
+}
+
+.prjdet {
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  background-color: rgb(45, 47, 48);
+  /* margin-left: 100px; */
+
+  /* margin-left: 40px; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+
+}
+
+.prjdet>h6 {
+  color: white;
+}
+
+/* h5>p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+} */
+
+
+.prjdetxt {
+  width: 400px;
+  /* margin-left: 30px; */
+  /* background-color: red; */
+  font-size: 20px;
+  /* margin-left: 50%; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  color: white;
+  /* justify-content: space-evenly; */
+}
+
+.prjdetxt>p {
+  text-align: center;
+  margin-left: 50px;
+}
+
+.txtyellow {
+  color: yellow;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.myserhead {
+  color: white;
+}
+
+.box {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+}
+
+.boxtxt>h3 {
+  text-align: center;
+}
+
+.boxtxt>h3,
+p {
+  color: white;
+}
+
+.boxtxt {
+  /* background-color: red; */
+  padding: 20px 10px;
+}
