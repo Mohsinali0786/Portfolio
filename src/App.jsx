@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './pages/home'
-import AboutUs from './pages/aboutus'
+import AppRouter from './config/router';
+
 
 function App() {
   return (
-    <Home/>
+    <AppRouter/>
     // <AboutUs/>
   )
 }

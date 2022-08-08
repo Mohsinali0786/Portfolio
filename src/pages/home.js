@@ -2,15 +2,18 @@ import * as React from 'react';
 
 import { Button, Container, Grid, Divider, LinearProgress, Box, } from '@mui/material';
 
-// import MyCircularProgressWithLabel from './component/CircularProgressWithLabel'
 import LinearProgressWithLabel from '../component/LinearProgressWithLabel'
 import CircularProgressWithLabel from '../component/circularprogressbar';
+import Navbar from '../component/navbar';
+import Aboutus from './aboutus';
 function Home() {
 
     return (
         <Container maxWidth={false}>
+            
             <Grid className='maingrid' sx={{ marginTop: 5 }} container spacing={1}>
-                <Grid item xs={3}>
+                <Navbar/>
+               <Grid item xs={3}>
                     <Grid className='sidebar'>
                         <Grid item xs={12}>
                             <img className='userimg' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlvtdV4uQPbm4qSygGuel4dYjXIpeFzDrc8Q&usqp=CAU' />
@@ -126,8 +129,6 @@ function Home() {
                                 </Box>
                             </Grid>
                         </Grid>
-
-
                     </Grid>
                 </Grid>
             </Grid>
