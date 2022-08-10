@@ -8,9 +8,9 @@ function LinearProgressWithLabel(props) {
     return (
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Box sx={{ width: '100%', mr: 1 }}>
-                <LinearProgress variant="determinate" {...props} sx={{
+                <LinearProgress variant="determinate" style={{ height: '10px' }} {...props} sx={{
                     "& .MuiLinearProgress-bar": {
-                        backgroundColor: `yellow`
+                        backgroundColor: `black`,
                     }
                 }} />
             </Box>

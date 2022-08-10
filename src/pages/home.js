@@ -1,16 +1,43 @@
 import * as React from 'react';
 
-import { Button, Container, Grid, Divider, LinearProgress, Box, } from '@mui/material';
+import { Button, Container, Grid, Divider, Box, } from '@mui/material';
 
-// import MyCircularProgressWithLabel from './component/CircularProgressWithLabel'
 import LinearProgressWithLabel from '../component/LinearProgressWithLabel'
-import CircularProgressWithLabel from '../component/circularprogressbar';
+import CircularProgressWithLabel from '../component/CircularProgressBar';
+import Navbar from '../component/Navbar';
+import Aboutus from './aboutus';
+import ContactUs from './contactus';
+import Myprojects from './myprojects';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Myservices from './services';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 function Home() {
 
     return (
         <Container maxWidth={false}>
             <Grid className='maingrid' sx={{ marginTop: 5 }} container spacing={1}>
-                <Grid item xs={3}>
+
+                <Grid className="background" item xs={12}>
+                    <Navbar />
+                    <Grid className='hometext' >
+                        <h1><i>Hello</i></h1>
+                        <h1>I am Web Developer</h1>
+                    </Grid>
+                    <Grid className='homelogos'>
+                        <Grid style={{ textAlign: 'center' }}>
+                            <a href=''><FacebookOutlinedIcon style={{ color: 'white' }} /></a>
+                        </Grid>
+                        <Grid style={{ textAlign: 'center', marginLeft: '10px' }}>
+                            <a href=''><LinkedInIcon style={{ color: 'white' }} /></a>
+                        </Grid>
+                        <Grid style={{ textAlign: 'center', marginLeft: '10px' }}>
+                            <a href=''><GitHubIcon style={{ color: 'white' }} /></a>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                {/* <Grid item xs={3}>
                     <Grid className='sidebar'>
                         <Grid item xs={12}>
                             <img className='userimg' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlvtdV4uQPbm4qSygGuel4dYjXIpeFzDrc8Q&usqp=CAU' />
@@ -53,15 +80,12 @@ function Home() {
                         </Grid>
                     </Grid>
 
-                </Grid>
-                <Grid item xs={8} sx={{ marginLeft: 5 }}>
-                    {/* <Grid className='homeimg'>
-                        <h1>Discover My Amazing ArtFact!</h1>
-                        <h4>I Build</h4>
-                    </Grid> */}
-
+                </Grid> */}
+                {/* <Grid item xs={8} sx={{ marginLeft: 5  }}>
                     <img className='homeimg' src="https://media.istockphoto.com/photos/computer-programmer-working-on-laptop-picture-id1265176772?b=1&k=20&m=1265176772&s=170667a&w=0&h=IHFnvxa3kvVTuZcEfPpCSGIFA_gNT7dIlGDR7eD2cFI=" />
-                    <Grid className='prjdet' item xs={15}>
+                    
+                    <Grid className='prjdet' item xs={12}>
+
                         <Grid className="prjdetxt" item xs={12}>
                             <p className='txtyellow'>2+</p>
                             <p>year Experience</p>
@@ -126,12 +150,37 @@ function Home() {
                                 </Box>
                             </Grid>
                         </Grid>
+                    </Grid>
+                </Grid> */}
+                {/* </Grid> */}
 
+                <Grid container spacing={1}>
+                    <Grid item xs={12}>
+                        <Myservices />
+                    </Grid>
+                </Grid>
 
+                <Grid container spacing={1}>
+                    <Grid item xs={12}>
+                        <Myprojects />
+                    </Grid>
+                </Grid>
+
+                <Grid container spacing={1}>
+                    <Grid item xs={12}>
+                        <Aboutus />
+                    </Grid>
+                </Grid>
+
+                <Grid container spacing={1}>
+                    <Grid item xs={12}>
+                        <ContactUs />
                     </Grid>
                 </Grid>
             </Grid>
+
         </Container >
+
 
     )
 }

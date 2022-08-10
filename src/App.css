@@ -1,8 +1,65 @@
 body {
   /* background-color: black; */
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWvCbbaU49E6N-_uAb-2RlKQ941iDFcwedQ&usqp=CAU');
+  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWvCbbaU49E6N-_uAb-2RlKQ941iDFcwedQ&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
+
+.background {
+  background-image: url('https://t3.ftcdn.net/jpg/02/94/56/74/240_F_294567465_DYZmowkf1lBn3lxAvekHT9W5GT18DBSG.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vmax;
+  height: 50vmax;
+}
+
+.hometext {
+  margin-top: 80px;
+}
+
+.hometext h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.logoimg {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.bgnav {
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 400px;
+  /* flex-wrap: wrap; */
+  /* align-items: baseline; */
+  /* padding-left: 30%; */
+
+  /* padding-top: 90px; */
+
+}
+
+.mnavbar {
+  /* padding-left: 200px; */
+  /* text-align: 'center'; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.linkcol {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  margin-left: 50px;
+
 }
 
 
@@ -66,7 +123,6 @@ body {
 .styledivider>h3,
 h4 {
   color: white;
-  /* text-align: left !important; */
 }
 
 .experience {
@@ -79,41 +135,19 @@ h5 {
 }
 
 .prjdet {
-
-  display: flex;
-  /* flex-wrap: wrap; */
+  /* display: flex;
   justify-content: space-between;
-  background-color: rgb(45, 47, 48);
-  /* margin-left: 100px; */
-
-  /* margin-left: 40px; */
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
-
+  background-color: rgb(45, 47, 48); */
 }
 
 .prjdet>h6 {
   color: white;
 }
 
-/* h5>p {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 20px;
-} */
-
-
 .prjdetxt {
   width: 400px;
-  /* margin-left: 30px; */
-  /* background-color: red; */
   font-size: 20px;
-  /* margin-left: 50%; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   color: white;
-  /* justify-content: space-evenly; */
 }
 
 .prjdetxt>p {
@@ -147,6 +181,135 @@ p {
 }
 
 .boxtxt {
-  /* background-color: red; */
   padding: 20px 10px;
+}
+
+.abouthead
+
+/* ,.contacthead  */
+  {
+  color: black;
+  text-align: left;
+  font-size: x-large;
+}
+
+
+.abouthead {
+  display: flex;
+  justify-content: space-around;
+}
+
+#aboutimg {
+  width: 90%;
+  margin: 30px;
+  margin-top: 70px;
+}
+
+.abouthead h5 {
+  color: black;
+  padding-left: 30px;
+}
+
+.abouthead p {
+  color: black;
+  font-size: 17px;
+}
+
+#aboutus,
+#contactus,
+#myproj,
+#myservices {
+  text-align: center;
+
+}
+
+.contactdet {
+  display: flex;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contactdet a {
+  text-decoration: none;
+}
+
+.contactdet p {
+  color: black;
+}
+
+
+
+
+
+
+.boxes {
+  width: 400px;
+  background-color: grey;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+.boxes h2 {
+  color: white;
+}
+
+.boxes a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.gitbtn {
+  background-color: red;
+}
+
+.gitbtn:hover {
+  background-color: red;
+}
+
+
+
+.icons {
+  background-color: silver;
+  border-radius: 100%;
+  width: 100px;
+
+}
+
+.servicebox {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.serbox {
+  background-color: white;
+  text-align: center;
+}
+
+.serbox p {
+  color: black;
+}
+
+.contactmaingrid {
+  padding-left: 5%;
+  /* display: flex;
+  justify-content: space-around; */
+}
+
+#message {
+  height: 100px;
+  width: 400px;
+}
+
+.homelogos {
+  display: flex;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: 'sample';
+  src: url('./assets/fonts/RubikMarkerHatch-Regular.ttf');
+
 }
