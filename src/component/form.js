@@ -15,7 +15,7 @@ function Form() {
                         <input type='number' id='phone' name='phone' placeholder="Enter Mobile Number" /><br />
                         <label for='message'>Message:</label><br />
                         <input type='text' id='message' name='message' height="20" placeholder="Enter your Text Here" /><br /><br />
-                        <Button variant='contained'>On Submit</Button>
+                        <Button sx={{ marginBottom: '30px' }} variant='contained'>On Submit</Button>
                     </form>
                 </Grid>
             </Grid>

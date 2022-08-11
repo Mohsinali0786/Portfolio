@@ -8,26 +8,25 @@ import Form from '../component/form'
 
 function ContactUs() {
     return (
-        <Container sx={{ border: '1px solid black', borderRadius: '20px', marginTop: '20px' }} maxWidth={false}>
+        <Container className="contactuscont" sx={{  }} maxWidth={false}>
             <h1 id="contactus">Contact Us</h1>
             <Grid className='contactmaingrid' sx={{ marginTop: 5 }} container spacing={1}>
-                <Grid item xs={12} md={6}>
-                    <Form />
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Grid className="contactdet" item xs={12}>
-                        <Grid item xs={4}>
-                            <EmailIcon fontSize="large" />
+                <Form />
+                \
+                <Grid sx={{ display: 'flex', justifyContent: 'right' }} container spacing={1}>
+                    <Grid className="contactdet" >
+                        <Grid >
+                            <EmailIcon fontSize="medium" />
                         </Grid>
-                        <Grid item xs={8} md={4}>
+                        <Grid >
                             <a href="mailto:mohsinali481997@gmail.com">mohsinali481997@gmail.com</a>
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} className="contactdet">
-                        <Grid item xs={4}>
-                            <AddIcCallOutlinedIcon fontSize="large" />
+                    <Grid className="contactdet" >
+                        <Grid>
+                            <AddIcCallOutlinedIcon fontSize="medium" />
                         </Grid>
-                        <Grid item xs={8}>
+                        <Grid>
                             +923212097195
                         </Grid>
                     </Grid>

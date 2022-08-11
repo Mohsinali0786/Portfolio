@@ -43,18 +43,22 @@ body {
 
 .mnavbar {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+}
+
+.logoalign {
+  display: flex;
+  justify-content: left;
 }
 
 .bgnav {
   display: flex;
   align-items: center;
-  width: 100%;
 }
 
 .bgcolnav {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   /* padding: 100px; */
   /* background-color: rebeccapurple; */
 }
@@ -213,19 +217,21 @@ p {
   padding: 20px 10px;
 }
 
-.abouthead
-
-/* ,.contacthead  */
-  {
+.abouthead {
   color: black;
   text-align: left;
   font-size: x-large;
-}
-
-
-.abouthead {
   display: flex;
   justify-content: space-around;
+}
+
+.abouttext {
+  background-color: cadetblue;
+}
+
+.abouthead h5,
+p {
+  color: white !important;
 }
 
 #aboutimg {
@@ -236,7 +242,6 @@ p {
 
 .abouthead h5 {
   color: black;
-  padding-left: 30px;
 }
 
 .abouthead p {
@@ -249,13 +254,17 @@ p {
 #myproj,
 #myservices {
   text-align: center;
+  color: white;
 
+}
+
+.submitbtn {
+  padding-top: 30px;
 }
 
 .contactdet {
   display: flex;
-  text-align: center;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .contactdet a {
@@ -273,7 +282,7 @@ p {
 
 .boxes {
   width: 400px;
-  background-color: grey;
+  background-color: cadetblue;
   text-align: center;
   padding-bottom: 20px;
 
@@ -311,23 +320,30 @@ p {
   display: flex;
   justify-content: space-around;
   padding: 40px;
+  padding: 3px;
 }
 
 .serbox {
-  background-color: white;
+  background-color: cadetblue;
   text-align: center;
   /* margin-top: 20px; */
 }
 
-.serbox p {
-  color: black;
+.serbox p,
+h2 {
+  color: white;
 }
 
 .contactmaingrid {
   padding-left: 5%;
-  /* display: flex;
-  justify-content: space-around; */
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
 }
+
+/* display: flex;
+  justify-content: space-around; */
 
 #message {
   height: 100px;
@@ -346,6 +362,13 @@ p {
 }
 
 
+.contactuscont {
+
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 20px 0px;
+  background-color: silver;
+}
 
 /* #Form Styling */
 
@@ -380,8 +403,11 @@ input[type=number] {
   border-radius: 4px;
   padding: 12px 20px 12px 5px;
   box-sizing: border-box;
+  /* padding: 12px 20px 12px 5px; */
+  transition: width 0.4s ease-in-out;
 
 }
+
 
 input[type=text]:focus {
   width: 100%;
@@ -391,6 +417,24 @@ input[type=email]:focus {
   width: 100%;
 }
 
+input[type=number]:focus {
+  width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  input[type=text]:focus {
+    width: 50%;
+  }
+
+  input[type=email]:focus {
+    width: 50%;
+  }
+
+  input[type=number]:focus {
+    width: 50%;
+  }
+
+}
 
 @media only screen and (max-width: 500px) {
 
@@ -401,4 +445,51 @@ input[type=email]:focus {
     width: 100%;
 
   }
+}
+
+
+
+/* Navigation Styling */
+
+
+.mynavbar {
+  width: 120px;
+  /* background-color: black; */
+  /* text-align: right; */
+  width: 80px;
+}
+
+
+#collasible-nav-dropdown,
+.linkcolors {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .mynavbar {
+    display: block;
+    margin-top: 60px;
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .bgnav {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .bgnav {
+    display: flex;
+  }
+
+  .mynavbar {
+    display: none;
+  }
+
 }

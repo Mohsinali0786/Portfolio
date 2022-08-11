@@ -12,6 +12,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Myservices from './services';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import BasicMenu from "../component/menu";
 
 function Home() {
 

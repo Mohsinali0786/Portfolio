@@ -4,11 +4,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Myprojects() {
     return (
-        <Container maxWidth={false}>
+        <Container sx={{ backgroundColor: 'silver', paddingBottom: '50px' }} maxWidth={false}>
             <h1 id='myproj'>My Projects</h1>
             <Grid className='maingrid' sx={{ marginTop: 5 }} container spacing={1}>
                 <Grid className='abouthead' item xs={12}>
-
                     <Grid container spacing={1} sx={{ display: 'flex', justifyContent: 'space-around', paddingBottom: '20px', marginTop: '20px' }} item xs={12}>
                         <Grid className='boxes' sx={{ marginTop: '30px' }} item xs={12} md={5} xl={4}>
                             <h2>Olx-App</h2>
