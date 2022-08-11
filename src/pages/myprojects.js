@@ -10,7 +10,7 @@ function Myprojects() {
                 <Grid className='abouthead' item xs={12}>
 
                     <Grid container spacing={1} sx={{ display: 'flex', justifyContent: 'space-around', paddingBottom: '20px', marginTop: '20px' }} item xs={12}>
-                        <Grid className='boxes' item xs={5}>
+                        <Grid className='boxes' sx={{ marginTop: '30px' }} item xs={12} md={5} xl={4}>
                             <h2>Olx-App</h2>
                             <Button sx={{ backgroundColor: 'black', color: 'white' }} variant='contained'>
                                 <GitHubIcon />
@@ -18,14 +18,14 @@ function Myprojects() {
                             </Button>
                         </Grid>
 
-                        <Grid className='boxes' item xs={5}>
+                        <Grid className='boxes' sx={{ marginTop: '30px' }} item xs={12} md={5} xl={4}>
                             <h2>Blood-Bank-App</h2>
                             <Button sx={{ backgroundColor: 'black', color: 'white' }}>
                                 <GitHubIcon />
                                 <a href='https://github.com/Mohsinali-Iot/BloodBankApp.git'>Github Repo</a>
                             </Button>
                         </Grid>
-                        <Grid className='boxes' sx={{ marginTop: '30px' }} item xs={5}>
+                        <Grid className='boxes' sx={{ marginTop: '30px' }} item xs={12} md={5} xl={4}>
                             <h2>Campus-Recruitment-System-final</h2>
                             <Button sx={{ backgroundColor: 'black', color: 'white' }}>
                                 <GitHubIcon />
