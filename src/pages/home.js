@@ -2,8 +2,6 @@ import * as React from 'react';
 
 import { Button, Container, Grid, Divider, Box, } from '@mui/material';
 
-import LinearProgressWithLabel from '../component/LinearProgressWithLabel'
-import CircularProgressWithLabel from '../component/CircularProgressBar';
 import Navbar from '../component/Navbar';
 import Aboutus from './aboutus';
 import ContactUs from './contactus';
